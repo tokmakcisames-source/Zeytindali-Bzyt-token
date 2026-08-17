@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/bzyt.html",
+      "permanent": false
+    }
+  ]
+}
