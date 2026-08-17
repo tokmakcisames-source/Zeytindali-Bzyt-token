@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeytindalı BZYT · Resmi Asistan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: white; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1b5e20 0%, #000000 100%); }
+        .bzyt-green { color: #81c784; }
+        .btn-primary { background: #2e7d32; transition: 0.3s; }
+        .btn-primary:hover { background: #388e3c; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen gradient-bg flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Zeytindalı <span class="bzyt-green">BZYT</span></h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">İyilik bir fikir değil, blockchain üzerinde işleyen sürdürülebilir bir sistemdir.</p>
+        <div class="flex flex-col md:flex-row gap-4 w-full max-w-md">
+            <a href="https://t.me/Bzyt_zeytindali_2026_bot" target="_blank" class="btn-primary py-4 rounded-xl font-bold text-lg shadow-lg">Telegram Botunu Başlat</a>
+            <a href="https://youtube.com/@zeytindalibzyt" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 py-4 rounded-xl font-bold text-lg transition">YouTube Kanalımız</a>
+        </div>
+        <div class="mt-16 border-t border-zinc-800 pt-8 w-full max-w-4xl">
+            <p class="text-xl italic text-zinc-300">"Sistem bana bile ait olmasın; iyilik, bir kişinin ömrüne bağlı kalmasın."</p>
+            <p class="mt-4 font-bold text-white">— ABDUSSELAM TOKMAKÇI</p>
+        </div>
+    </div>
+
+    <!-- AI ASİSTAN WIDGET -->
+    <div id="bzyt-chat-widget" style="position: fixed; bottom: 25px; right: 25px; z-index: 10000;">
+        <div id="chat-bubble" onclick="toggleChat()" style="width: 65px; height: 65px; background: #2e7d32; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(0,0,0,0.6);">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5-1.338C8.47 21.513 10.179 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+        </div>
+        <div id="chat-window" style="display: none; width: 340px; height: 500px; background: #1a1a1a; border: 1px solid #333; border-radius: 20px; flex-direction: column; box-shadow: 0 10px 40px rgba(0,0,0,0.8); position: absolute; bottom: 85px; right: 0; overflow: hidden;">
+            <div style="background: #2e7d32; color: white; padding: 20px; font-weight: bold; display: flex; justify-content: space-between;">
+                <span>🌿 BZYT AI Asistan</span>
+                <span onclick="toggleChat()" style="cursor: pointer;">&times;</span>
+            </div>
+            <div id="chat-content" style="flex: 1; padding: 20px; overflow-y: auto; font-size: 14px; background: #121212; color: #ddd;">
+                <div style="background: #2e7d3233; padding: 12px; border-radius: 10px; margin-bottom: 15px;">Merhaba! Ben BZYT asistanıyım. Kurucumuz **ABDUSSELAM TOKMAKÇI**'nın vizyonu hakkında ne öğrenmek istersiniz?</div>
+            </div>
+            <div style="padding: 15px; border-top: 1px solid #333; display: flex; gap: 10px;">
+                <input id="chat-input" type="text" placeholder="Soru yazın..." style="flex: 1; background: #222; color: white; border: 1px solid #444; padding: 10px; border-radius: 20px; outline: none;">
+                <button onclick="askAI()" style="background: #2e7d32; color: white; border: none; padding: 10px 20px; border-radius: 20px;">Sor</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const win = document.getElementById('chat-window');
+            win.style.display = win.style.display === 'none' ? 'flex' : 'none';
+        }
+        function askAI() {
+            const input = document.getElementById('chat-input');
+            const content = document.getElementById('chat-content');
+            const text = input.value.trim().toLowerCase();
+            if (!text) return;
+            content.innerHTML += `<div style="text-align: right; margin-bottom: 15px;"><span style="background: #333; padding: 10px; border-radius: 15px;">${input.value}</span></div>`;
+            let res = "BZYT, sürdürülebilir iyilik için kurulmuş bir blockchain projesidir. 🌿";
+            if(text.includes("kurucu") || text.includes("kim")) res = "Kurucumuz **ABDUSSELAM TOKMAKÇI**'dır. Vizyonu iyiliği bir sisteme emanet etmektir.";
+            if(text.includes("amaç") || text.includes("neden")) res = "Amacımız tarım ve hayvancılık üretimiyle ihtiyaç sahiplerine sürdürülebilir destek sağlamaktır.";
+            setTimeout(() => {
+                content.innerHTML += `<div style="background: #2e7d3233; padding: 12px; border-radius: 10px; margin-bottom: 15px;">${res}</div>`;
+                content.scrollTop = content.scrollHeight;
+            }, 500);
+            input.value = '';
+        }
+    </script>
+</body>
+</html>
