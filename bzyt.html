@@ -3,42 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeytindalı BZYT · Matematiksel Adalet</title>
-    <meta name="description" content="İnsan nankörlüğüne değil, matematiğin ve yazılımın şeffaflığına emanet edilmiş ölümsüz bir iyilik sistemi.">
+    <title>Zeytindalı BZYT · Resmi Web Sitesi</title>
+    
+    <!-- SEO Ayarları -->
+    <meta name="description" content="Zeytindalı Token (BZYT), tarım, hayvancılık ve blockchain teknolojisiyle ihtiyaç sahiplerine sürdürülebilir destek sağlayan resmi yardım projesidir.">
+    <meta name="keywords" content="Zeytindalı, BZYT, Abdusselam Tokmakçı, Blockchain, Yardım, Tarım, Hayvancılık">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0a0a0a; color: white; font-family: 'Inter', sans-serif; }
+        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .bzyt-green { color: #81c784; }
-        .gradient-border { border-left: 4px solid #2e7d32; padding-left: 20px; }
+        .bg-bzyt { background-color: #1b5e20; }
+        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; }
+        .roadmap-line { border-left: 2px dashed #2e7d32; }
     </style>
 </head>
-<body class="p-6 md:p-20">
-    <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter">Zeytindalı <span class="bzyt-green">BZYT</span></h1>
-        
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold bzyt-green mb-4">📜 KURUCU MANİFESTOSU</h2>
-            <p class="text-xl italic text-gray-300 leading-relaxed gradient-border">
-                "İnsan nankördür, her an değişebilir. Bu yüzden projemizi insanın vicdanına değil, **matematiğin ve yapay zekanın şeffaflığına** emanet ettik. Benim için en güvenilir olan matematiktir."
+<body>
+
+    <!-- Hero / Kurucu Bölümü -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center bg-gradient-to-b from-green-900/20 to-black">
+        <div class="w-32 h-32 rounded-full border-4 border-green-600 overflow-hidden mb-6 shadow-2xl">
+            <img src="https://raw.githubusercontent.com/tokmakcisames-source/zeytindali-bzyt-token/main/IMG_20260818_190649.jpg" alt="Abdusselam Tokmakçı" class="w-full h-full object-cover">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter">ZEYTİNDALI <span class="bzyt-green">BZYT</span></h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-8 italic">"İyilik bir fikir değil, işleyen bir sistemdir. Matematiğe ve blockchain şeffaflığına güveniyoruz."</p>
+        <div class="flex gap-4 flex-wrap justify-center">
+            <a href="https://t.me/Bzyt_zeytindali_2026_bot" target="_blank" class="bg-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-600 transition shadow-lg shadow-green-900/40">🤖 AI ASİSTANI AÇ</a>
+            <a href="#roadmap" class="border border-zinc-700 px-8 py-4 rounded-full font-bold hover:bg-zinc-800 transition">🚀 YOL HARİTASI</a>
+        </div>
+    </section>
+
+    <!-- Yol Haritası (Roadmap) -->
+    <section id="roadmap" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center bzyt-green">PROJE YOL HARİTASI</h2>
+        <div class="space-y-12 roadmap-line ml-4 md:ml-0 md:roadmap-none">
+            <div class="relative pl-10 md:pl-0 md:flex md:justify-between items-center">
+                <div class="md:w-5/12 card p-8">
+                    <h3 class="text-xl font-bold bzyt-green mb-2">1. AŞAMA: Tanıtım ve Dağılım</h3>
+                    <p class="text-gray-400">Şu an bu aşamadayız. Vizyonumuzu dünyaya duyuruyor ve liyakatli bir topluluk inşa ediyoruz.</p>
+                </div>
+                <div class="hidden md:block w-4 h-4 bg-green-600 rounded-full shadow-lg shadow-green-500/50"></div>
+                <div class="md:w-5/12"></div>
+            </div>
+            <div class="relative pl-10 md:pl-0 md:flex md:justify-between items-center">
+                <div class="md:w-5/12"></div>
+                <div class="hidden md:block w-4 h-4 bg-zinc-700 rounded-full"></div>
+                <div class="md:w-5/12 card p-8 border-green-900/30">
+                    <h3 class="text-xl font-bold text-gray-300 mb-2">2. AŞAMA: Lansman ve Borsa</h3>
+                    <p class="text-gray-500">Üretim tesislerimizin tamamlanmasıyla birlikte resmi lansman ve güvenilir borsalarda listeleme süreci başlayacak.</p>
+                </div>
+            </div>
+            <div class="relative pl-10 md:pl-0 md:flex md:justify-between items-center">
+                <div class="md:w-5/12 card p-8 border-green-900/30">
+                    <h3 class="text-xl font-bold text-gray-300 mb-2">3. AŞAMA: Akıllı Kontrat ve DAO</h3>
+                    <p class="text-gray-500">Sistem tamamen akıllı sözleşmelere ve DAO (Merkeziyetsiz Yönetim) yapısına emanet edilerek ölümsüzleşecek.</p>
+                </div>
+                <div class="hidden md:block w-4 h-4 bg-zinc-700 rounded-full"></div>
+                <div class="md:w-5/12"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Bölümü -->
+    <section class="py-20 px-6 bg-zinc-900/30">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10 bzyt-green">VİDEOLARIMIZI İNCELEYİN</h2>
+            <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl border border-zinc-800">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=user_uploads&list=zeytindalibzyt" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-6 text-gray-400">En güncel üretim ve yardım faaliyetlerimizi YouTube kanalımızdan takip edebilirsiniz.</p>
+        </div>
+    </section>
+
+    <!-- Liyakat ve Adalet -->
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="card p-10 bg-gradient-to-br from-green-900/10 to-transparent">
+            <h2 class="text-3xl font-bold mb-6">⚖️ LİYAKAT VE ADALET</h2>
+            <p class="text-xl text-gray-300 leading-relaxed mb-6">
+                "Bu projede akrabalık veya soyadı geçmez. Kurucumuzun kendi çocukları dahi olsa; **çalışan hak ettiğini alır, çalışmayana hak yoktur.**"
             </p>
-            <p class="mt-4 text-right font-bold">— ABDUSSELAM TOKMAKÇI</p>
+            <div class="h-1 w-20 bg-green-600 mx-auto"></div>
         </div>
+    </section>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-                <h3 class="font-bold bzyt-green mb-2">⚖️ LİYAKAT ESASI</h3>
-                <p class="text-gray-400">Akrabalık, dostluk veya soyadı geçmez. Kendi çocuklarım dahi olsa; çalışan hak ettiğini alır, çalışmayana hak yoktur.</p>
-            </div>
-            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-                <h3 class="font-bold bzyt-green mb-2">🛡️ NEDEN BORSADA YOK?</h3>
-                <p class="text-gray-400">Geliştirme aşamasında balinaların ve dolandırıcıların insanlara zarar vermemesi için tokenları Metamask'ta saklı tutuyoruz.</p>
-            </div>
-        </div>
+    <!-- Footer -->
+    <footer class="py-10 text-center border-t border-zinc-800 text-gray-500 text-sm">
+        <p>© 2026 Zeytindalı BZYT · Tüm Hakları İyiliğe Aittir.</p>
+    </footer>
 
-        <div class="flex flex-wrap gap-4">
-            <a href="https://t.me/Bzyt_zeytindali_2026_bot" target="_blank" class="bg-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-600 transition">🤖 AI ASİSTANI AÇ</a>
-            <a href="https://youtube.com/@zeytindalibzyt" target="_blank" class="border border-zinc-700 px-8 py-4 rounded-full font-bold hover:bg-zinc-800 transition">📺 YOUTUBE KANALI</a>
-        </div>
-    </div>
 </body>
 </html>
