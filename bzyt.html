@@ -3,97 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeytindalı BZYT · Resmi Web Sitesi</title>
+    <title>Zeytindalı BZYT | Sürdürülebilir İyilik Sistemi</title>
     
-    <!-- SEO Ayarları -->
+    <!-- SEO & Meta Tags -->
     <meta name="description" content="Zeytindalı Token (BZYT), tarım, hayvancılık ve blockchain teknolojisiyle ihtiyaç sahiplerine sürdürülebilir destek sağlayan resmi yardım projesidir.">
     <meta name="keywords" content="Zeytindalı, BZYT, Abdusselam Tokmakçı, Blockchain, Yardım, Tarım, Hayvancılık">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .bzyt-green { color: #81c784; }
-        .bg-bzyt { background-color: #1b5e20; }
-        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; transition: all 0.3s ease; }
-        .card:hover { background: rgba(255, 255, 255, 0.05); border-color: #2e7d32; }
-        .gold-glow { text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+        :root { --gold: #D4AF37; --emerald: #2E7D32; }
+        body { background-color: #080808; color: #f0f0f0; font-family: 'Inter', sans-serif; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gold-text { color: var(--gold); }
+        .emerald-text { color: var(--emerald); }
+        .gradient-bg { background: radial-gradient(circle at top right, rgba(46, 125, 50, 0.1), transparent), radial-gradient(circle at bottom left, rgba(212, 175, 55, 0.05), transparent); }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
     </style>
 </head>
-<body>
+<body class="gradient-bg">
 
-    <!-- Hero / Kurucu Bölümü -->
-    <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center bg-gradient-to-b from-green-900/20 to-black">
-        <div class="w-48 h-48 rounded-full border-4 border-green-600 overflow-hidden mb-8 shadow-2xl">
-            <!-- Sizin en son gönderdiğiniz profesyonel fotoğrafınız -->
-            <img src="https://raw.githubusercontent.com/tokmakcisames-source/zeytindali-bzyt-token/main/1000080795.png" alt="Abdusselam Tokmakçı" class="w-full h-full object-cover">
+    <!-- Header / Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-32 text-center overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#080808]"></div>
         </div>
-        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter gold-glow">ZEYTİNDALI <span class="bzyt-green">BZYT</span></h1>
-        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mb-8 italic">"İyilik bir fikir değil, işleyen bir sistemdir. Matematiğe ve blockchain şeffaflığına güveniyoruz."</p>
-        <div class="flex gap-4 flex-wrap justify-center mb-12">
-            <a href="https://t.me/Bzyt_zeytindali_2026_bot" target="_blank" class="bg-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-600 transition shadow-lg shadow-green-900/40">🤖 AI ASİSTANI AÇ</a>
-            <a href="https://www.youtube.com/@zeytindaliBzyt" target="_blank" class="bg-red-700 px-8 py-4 rounded-full font-bold hover:bg-red-600 transition">🎥 YOUTUBE KANALIMIZ</a>
-        </div>
-        <div class="bg-yellow-900/20 border border-yellow-700/50 p-4 rounded-xl max-w-2xl text-sm text-yellow-200">
-            🛡️ <strong>RESMİ BİLDİRİ:</strong> Bu proje geliştirme aşamasındadır. Henüz herhangi bir borsa satışı yoktur. Dolandırıcılık girişimlerine karşı sadece bu resmi kanalları takip ediniz.
-        </div>
-    </section>
-
-    <!-- Gelir Modeli -->
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center bzyt-green italic">01 / GELİR MODELİ: ÜRET, BÜYÜT, PAYLAŞ</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card p-8 text-center">
-                <div class="text-5xl font-black bzyt-green mb-4">%50</div>
-                <h3 class="text-xl font-bold mb-2">Sosyal Yardım</h3>
-                <p class="text-gray-400 text-sm">Fakir, evsiz, yetim ve engelli kardeşlerimize sürdürülebilir destek.</p>
+        
+        <div class="relative z-10">
+            <div class="w-56 h-56 rounded-full border-2 border-[#D4AF37] p-1 mx-auto mb-10 shadow-[0_0_50px_rgba(212,175,55,0.2)] overflow-hidden">
+                <img src="https://raw.githubusercontent.com/tokmakcisames-source/zeytindali-bzyt-token/main/1000080795.png" alt="Abdusselam Tokmakçı" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-700">
             </div>
-            <div class="card p-8 text-center">
-                <div class="text-5xl font-black text-blue-400 mb-4">%25</div>
-                <h3 class="text-xl font-bold mb-2">Sistemsel Büyüme</h3>
-                <p class="text-gray-400 text-sm">Yeni araziler, hayvanlar ve üretim tesisleri için yatırım.</p>
-            </div>
-            <div class="card p-8 text-center">
-                <div class="text-5xl font-black text-yellow-500 mb-4">%25</div>
-                <h3 class="text-xl font-bold mb-2">Topluluk Teşviki</h3>
-                <p class="text-gray-400 text-sm">BZYT ekosistemine inanan ve katkı sağlayan topluluk payı.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Üretim Alanları -->
-    <section class="py-20 px-6 bg-zinc-900/30">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center bzyt-green italic">02 / ÜRETİM GÜCÜMÜZ</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="card p-6 text-center">🚜 <br> Tarım</div>
-                <div class="card p-6 text-center">🐄 <br> Hayvancılık</div>
-                <div class="card p-6 text-center">🥛 <br> Süt Ürünleri</div>
-                <div class="card p-6 text-center">🥩 <br> Et Üretimi</div>
-                <div class="card p-6 text-center">🥫 <br> Konserve</div>
-                <div class="card p-6 text-center">🧶 <br> Yün & Deri</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Liyakat Anayasası -->
-    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <div class="card p-10 border-green-600/30">
-            <h2 class="text-3xl font-bold mb-6">⚖️ LİYAKAT ANAYASASI</h2>
-            <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                "Bu projede akrabalık veya soyadı geçmez. Kurucumuzun kendi çocukları dahi olsa; **çalışan hak ettiğini alır, çalışmayana hak yoktur.** İnsan nankördür, yazılım ve üretim ise gerçektir."
+            
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-tight">
+                ZEYTİNDALI <span class="gold-text italic">BZYT</span>
+            </h1>
+            
+            <p class="text-2xl md:text-3xl text-gray-400 max-w-4xl mx-auto mb-12 font-light leading-relaxed">
+                "İyilik bir fikir değil, <span class="gold-text font-semibold">işleyen bir sistemdir.</span>"
             </p>
-            <p class="text-sm text-gray-500 italic">- Abdusselam Tokmakçı</p>
+            
+            <div class="flex flex-wrap gap-6 justify-center mb-16">
+                <a href="https://t.me/Bzyt_zeytindali_2026_bot" target="_blank" class="bg-[#2E7D32] hover:bg-[#388E3C] text-white px-10 py-5 rounded-full font-bold text-lg transition shadow-2xl">🤖 AI ASİSTANI AÇ</a>
+                <a href="https://www.youtube.com/@zeytindaliBzyt" target="_blank" class="glass border border-white/20 hover:bg-white/5 text-white px-10 py-5 rounded-full font-bold text-lg transition">🎥 ÜRETİMİ İZLE</a>
+            </div>
+            
+            <div class="glass p-6 rounded-2xl max-w-3xl mx-auto border-yellow-700/30">
+                <p class="text-sm text-yellow-500/80 uppercase tracking-widest font-bold mb-2">🛡️ Güvenlik Protokolü</p>
+                <p class="text-gray-400 text-sm">Bu proje geliştirme aşamasındadır. Henüz herhangi bir borsa satışı yoktur. Sadece resmi kanalları takip ediniz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model / Pillars Section -->
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-24">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Sürdürülebilir Ekonomi Modeli</h2>
+            <div class="h-1 w-24 bg-[#D4AF37] mx-auto mb-8"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">Bağış toplamak yerine üretiyoruz. Net ticari kazancımızı şeffaf bir anayasaya göre paylaşıyoruz.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="glass p-12 rounded-[40px] text-center hover-scale">
+                <div class="text-7xl font-black gold-text mb-6">%50</div>
+                <h3 class="text-2xl font-bold mb-4">SOSYAL YARDIM</h3>
+                <p class="text-gray-500 leading-relaxed">Fakir, evsiz, yetim ve engelli bireyler için sürdürülebilir yaşam desteği.</p>
+            </div>
+            <div class="glass p-12 rounded-[40px] text-center hover-scale border-emerald-900/50">
+                <div class="text-7xl font-black text-emerald-500 mb-6">%25</div>
+                <h3 class="text-2xl font-bold mb-4 text-emerald-500">SİSTEMSEL BÜYÜME</h3>
+                <p class="text-gray-500 leading-relaxed">Yeni araziler, modern hayvancılık tesisleri ve üretim teknolojileri yatırımı.</p>
+            </div>
+            <div class="glass p-12 rounded-[40px] text-center hover-scale">
+                <div class="text-7xl font-black text-blue-500 mb-6">%25</div>
+                <h3 class="text-2xl font-bold mb-4 text-blue-500">TOPLULUK PAYI</h3>
+                <p class="text-gray-500 leading-relaxed">BZYT ekosistemine inanan ve değer katan topluluk üyeleri için teşvikler.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Grid -->
+    <section class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Üretim Gücümüz</h2>
+                    <p class="text-gray-400 text-lg">Topraktan gelen bereket, teknolojiyle buluşuyor. Gerçek üretim, gerçek değer.</p>
+                </div>
+                <div class="text-right">
+                    <span class="text-sm uppercase tracking-[0.3em] gold-text font-bold">Gerçek Varlıklar</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🚜</span>
+                    <p class="font-bold">TARIM</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🐄</span>
+                    <p class="font-bold">HAYVANCILIK</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🥛</span>
+                    <p class="font-bold">SÜT ÜRÜNLERİ</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🥩</span>
+                    <p class="font-bold">ET ÜRETİMİ</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🥫</span>
+                    <p class="font-bold">KONSERVE</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🧶</span>
+                    <p class="font-bold">YÜN & DERİ</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">🔗</span>
+                    <p class="font-bold">BLOCKCHAIN</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center hover:bg-emerald-900/10 transition">
+                    <span class="text-4xl mb-4 block">⚖️</span>
+                    <p class="font-bold">LİYAKAT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meritocracy Section -->
+    <section class="py-32 px-6 max-w-5xl mx-auto text-center">
+        <div class="glass p-16 md:p-24 rounded-[60px] border-emerald-900/30 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-900/10 blur-[100px]"></div>
+            <h2 class="text-4xl font-bold mb-10 gold-text">LİYAKAT ANAYASASI</h2>
+            <blockquote class="text-2xl md:text-3xl font-light italic leading-relaxed text-gray-300 mb-10">
+                "Bu projede akrabalık veya soyadı geçmez. Kurucumuzun kendi çocukları dahi olsa; <span class="gold-text font-bold">çalışan hak ettiğini alır, çalışmayana hak yoktur.</span> İnsan hata yapabilir, yazılım ve üretim ise gerçektir."
+            </blockquote>
+            <p class="text-sm tracking-widest uppercase text-gray-500 font-bold">— Abdusselam Tokmakçı</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 text-center border-t border-zinc-800">
-        <div class="mb-8">
-            <img src="https://raw.githubusercontent.com/tokmakcisames-source/zeytindali-bzyt-token/main/bzyt_final_logo.png" alt="BZYT Logo" class="w-24 mx-auto mb-4">
-            <p class="text-2xl font-bold bzyt-green italic">"Biz gideriz, iyilik kalır."</p>
+    <footer class="py-32 text-center border-t border-white/5">
+        <div class="mb-12">
+            <img src="https://raw.githubusercontent.com/tokmakcisames-source/zeytindali-bzyt-token/main/bzyt_final_logo.png" alt="BZYT Logo" class="w-32 mx-auto mb-8 drop-shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+            <h2 class="text-4xl font-black mb-4 serif italic gold-text">"Biz gideriz, iyilik kalır."</h2>
         </div>
-        <p class="text-gray-500 text-sm">© 2026 Zeytindalı BZYT · Abdusselam Tokmakçı Resmi Projesidir.</p>
+        
+        <div class="flex justify-center gap-8 mb-12 text-gray-500">
+            <a href="https://x.com/ZeytindaliBZYT" target="_blank" class="hover:text-white transition">X / TWITTER</a>
+            <a href="https://www.youtube.com/@zeytindaliBzyt" target="_blank" class="hover:text-white transition">YOUTUBE</a>
+            <a href="https://t.me/Samed1981" target="_blank" class="hover:text-white transition">TELEGRAM</a>
+        </div>
+        
+        <p class="text-gray-600 text-xs tracking-widest uppercase">© 2026 Zeytindalı BZYT · Tüm Hakları İyiliğe Aittir.</p>
     </footer>
 
 </body>
